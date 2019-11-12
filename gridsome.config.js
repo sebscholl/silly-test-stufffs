@@ -9,12 +9,12 @@ module.exports = {
     {
       use: '@gridsome/source-graphql',
       options: {
-        url: process.env['8BASE_WORKSPACE_ENDPOINT'],
+        url: process.env['EIGHTBASE_WORKSPACE_ENDPOINT'],
         fieldName: 'eightBase',
         typeName: 'eightBase',
 
         headers: {
-          Authorization: `Bearer ${process.env['8BASE_AUTH_TOKEN']}`,
+          Authorization: `Bearer ${process.env['EIGHTBASE_AUTH_TOKEN']}`,
         },
       },
     },
